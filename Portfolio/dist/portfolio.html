@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="output.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Your Portfolio</title>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&family=Young+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+    <style>
+        * {
+            font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;
+        }
+
+        .bg-image {
+
+            background-image: url('../image/bgImage.jpg');
+            position: relative;
+            background-size: cover;
+            background-position: left;
+            height: 700px;
+
+
+        }
+
+        .bg-image1 {
+            background-image: url('../image/bgImage1.jpg');
+            position: relative;
+            background-size: cover;
+            background-position: left;
+            height: 700px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #Projext-icon {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        #redirect-icon {
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+    </style>
+    <!-- bg-gradient-to-b from-gray-500 to-teal-700 -->
+
+</head>
+
+<body class=" h-screen w-full bg-cyan-950">
+
+    <div class="">
+
+        <!-- background-image -->
+        <div class="bg-image bg-fixed hidden md:block"></div>
+        <div class="bg-image1 bg-fixed md:hidden"></div>
+
+        <!-- Portfolio logo start here -->
+        <div class="mt-1 flex justify-between text-center items-center text-white
+             h-[50px] w-[100%] absolute top-0">
+
+            <div class="flex ml-5 items-center text-center md:ml-10 lg:ml-12">
+                <i class="fas fa-briefcase fa-xl" style="color: rgb(255, 255, 255);"></i>
+                <h1 class=" text-2xl font-extrabold ml-3 first-letter:text-5xl first-letter:font-bold first-letter:text-cyan-400
+              first-letter:float-left"> <a
+                        href="https://www.instagram.com/mr_sujeet_3.0/">𝝦𝝤Ɍ𝝩ꓝ𝝤Ⳑ𝝞𝝤</a> </h1>
+            </div>
+
+            <!-- home nav bar satrt here -->
+
+            <nav id="hidden-bar-Home" class="flex">
+
+                <nav class="hidden sm:block text-sm md:text-base">
+                    <ul class="flex justify-between items-center text-center pr-10 font-semibold md:mr-8 sm:ml-10">
+                        <li class="mx-4 sm:mx-3 hover:text-cyan-400 hover:underline hover:text-[17px]">
+                            <a href="#hidden-bar-Home">Home</a>
+
+                        </li>
+                        <li class="mx-4 sm:mx-1 hover:text-cyan-400 hover:underline hover:text-[17px]">
+                            <a href="#About-box">About</a>
+
+                        </li>
+                        <li class="mx-4 sm:mx-1 hover:text-cyan-400 hover:underline hover:text-[17px]">
+                            <a href="#Project-box">projects</a>
+
+                        </li>
+                        <li class="mx-4 sm:mx-1 hover:text-cyan-400 hover:underline hover:text-[17px]">
+                            <a href="#myskill-box">MySkills</a>
+
+                        </li>
+                        <li class="mx-4 sm:mx-1 hover:text-cyan-400 hover:underline hover:text-[17px]">
+                            <a href="#contact-boxx">Contact</a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <span id="show-btn" class="material-symbols-outlined mr-6 cursor-pointer">menu</span>
+
+            </nav>
+
+            <!-- home nav bar end here -->
+        </div>
+
+        <!-- side nav start here -->
+
+        <nav id="hidden-bar" class="hidden">
+            <nav
+                class=" flex flex-col justify-start items-start text-start pl-10 float-right bg-cyan-950 h-[100vh] w-[150px] sm:w-[200px] absolute top-0 right-0">
+                <ul class="font-semibold text-slate-200 md:mr-8">
+
+                    <span id="close-btn" class="material-symbols-outlined mt-3 cursor-pointer">close
+                    </span>
+
+                    <li class="my-3 hover:text-cyan-400 hover:underline hover:text-[17px]"><a href="#hidden-bar-Home">Home</a>
+
+                    </li>
+                    <li class="my-5 hover:text-cyan-400 hover:underline hover:text-[17px]"><a href="#About-box">About</a>
+
+                    </li>
+                    <li class="my-5 hover:text-cyan-400 hover:underline hover:text-[17px]"><a href="#Project-box">projects</a>
+
+                    </li>
+                    <li class="my-5 hover:text-cyan-400 hover:underline hover:text-[17px]"><a href="#myskill-box">MySkills</a>
+
+                    </li>
+                    <li class="my-5 hover:text-cyan-400 hover:underline hover:text-[17px]"><a href="#contact-boxx">Contact</a>
+
+                    </li>
+            </nav>
+        </nav>
+        <!-- side navbar end here -->
+
+        <div
+            class=" h-auto w-[265px] sm:w-[474px] md:w-[600px] flex justify-between items-center  absolute top-[230px] left-6 sm:ml-8 md:ml-12 ">
+
+
+            <div class="pl-2 flex flex-col justify-center rounded-xl">
+                <h2 class="text-xs sm:text-sm text-white font-semibold">Hii, my name is </h2>
+                <span class="text-base sm:text-xl md:text-3xl text-cyan-400 font-bold" id="element"></span>
+                <h1 class="text-[20px] sm:text-4xl md:text-[40px] text-white font-bold mt-1 ">I build things for the web
+                </h1>
+                <p
+                    class="text-[8px] sm:w-[300px] sm-text-[9px] md:w-[330px] md:text-[10px] lg:w-[380px] text-white font-bold mt-3 ">
+                    Highly skilled and innovative web developer, I bring a passion for clean, efficient code and a deep
+                    understanding of both front-end and back-end development. My ability to transform creative concepts
+                    into functional A Full Stack Developer with two years of professional experience, specializing in
+                    web development, project management, Agile
+                </p>
+
+
+                <button
+                    class="bg-cyan-400 shadow-md shadow-cyan-400 w-[11rem] rounded-2xl text-black font-extrabold mt-10">Hire
+                    me</button>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <div id="About-box" class="flex flex-wrap justify-evenly items-center mt-5">
+        <div class="border-2 rounded-2xl overflow-hidden lg:ml-12 shadow-cyan-400 shadow-md">
+            <img class="h-96" src="../image/AboutPic.jpg" alt="wating...">
+        </div>
+
+
+        <div class="m-4 mt-9 w-[250px] sm:w-[320px] md:w-[450px] lg:w-[550px] h-96 flex flex-col justify-center p-3">
+            <h1 class="text-slate-200 font-bold text-4xl mb-1">About<span class="text-cyan-400">Me</span></h1>
+            <h1 class="text-slate-200 font-bold text-base mb-1"><span class="text-cyan-400">Full</span>Stack Developer
+            </h1>
+            <p class="text-slate-200 text-xs ">Highly skilled and innovative web developer, I bring a passion for clean,
+                efficientcode and a deep understanding of both front-end and back-end development. My ability to
+                transform creative
+                concepts
+                into functional, user-friendly websites has led to the success of divers
+                into functional, user-friendly websites has led to the success of diverse projects.
+                understanding of both front-end and back-end development. My ability to transform creative
+                conceptse projects.</p>
+
+            <ul class="flex text-slate-200  text-sm  my-4">
+                <li onclick="Skills()" class="cursor-pointer hover:underline hover:text-cyan-400 hover:text-base">
+                    Skills</li>
+                <li onclick="Exprience()"
+                    class="ml-5 cursor-pointer hover:underline hover:text-cyan-400 hover:text-base">Exprience</li>
+                <li onclick="Education()"
+                    class="ml-5 cursor-pointer hover:underline hover:text-cyan-400 hover:text-base">Education</li>
+            </ul>
+
+            <div id="Skills-box" class="text-slate-200  text-xs flex flex-col ">
+                <div class="mt-2">
+                    <p class="text-[10px] text-cyan-400 underline">UI/UX</p>
+                    <p>Designing Web/App interface</p>
+                </div>
+                <div class="mt-2">
+                    <p class="text-[10px] text-cyan-400 underline">Web Development</p>
+                    <p>Web app Developer</p>
+                </div>
+                <div class="mt-2">
+                    <p class="text-[10px] text-cyan-400 underline">Skills</p>
+                    <p>HTML,CSS,JS,REACT</p>
+                </div>
+            </div>
+
+            <div id="Exprience-box" class="hidden">
+                <div class=" text-slate-200  text-xs flex flex-col ">
+                    <div class="mt-2">
+                        <p class="text-[10px] text-cyan-400 underline">2023-current</p>
+                        <p>UI/UX Designing traning form YT</p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-[10px] text-cyan-400 underline">2020-2023</p>
+                        <p>Full Masti</p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-[10px] text-cyan-400 underline">before-2020</p>
+                        <p>I can't imagine what to do</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Education-box" class="hidden">
+                <div class="text-slate-200  text-xs flex flex-col">
+                    <div class="mt-2">
+                        <p class="text-[10px] text-cyan-400 underline">2023</p>
+                        <p>UI/UX Designing traning at CETPA not really</p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-[10px] text-cyan-400 underline">2021-current</p>
+                        <p>BCA from HLM Muradnager</p>
+                    </div>
+                    <div class="mt-2">
+                        <p class="text-[10px] text-cyan-400 underline">Before-2021</p>
+                        <p>10th & 12th from SSK Bahrampur</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ABOUT SECTION END HERE -->
+
+    <!-- MY PROJECT START HERE -->
+    <div id="Project-box" class="text-white flex justify-center flex-col items-center w-[100%] mt-12">
+        <div>
+            <h1 class="underline text-2xl sm:mr-96 md:mr-[540px] lg:mr-[725px] font-bold"><span
+                    class="text-cyan-400 underline">MY</span>PROJECTS</h1>
+        </div>
+
+        <div
+            class="w-[400px] sm:w-[600px] md:w-[800px] lg:w-[1000px] flex flex-wrap justify-center items-center sm:flex-nowrap mt-8">
+            <div
+                class="hover:bg-cyan-800 border-2 rounded-xl bg-cyan-950 shadow-xl shadow-cyan-400 h-[200px]  flex flex-col justify-center m-2 pl-4  w-[250px] md:w-[350px] md:mx-6 hover:h-[215px] hover:w-[265px] sm:hover:h-[215px] sm:hover:w-[285px] md:hover:h-[215px] md:hover:w-[300px]  lg:hover:h-[215px] lg:hover:w-[330px]">
+                <i id="Projext-icon" class="fa-solid fa-code" style="color: #0ef;"></i>
+                <h1 class="font-semibold text-lg"><span class="text-cyan-400">Web</span>Design</h1>
+                <p class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque odit inventore
+                    asperiores beatae ipsa
+                    quas!</p>
+                <footer
+                    class="text-xs mt-3 cursor-pointer hover:underline hover:text-sm text-slate-300 hover:text-cyan-400">
+                    explore
+                </footer>
+            </div>
+            <div
+                class="hover:bg-cyan-800 border-2 rounded-xl bg-cyan-950 shadow-xl shadow-cyan-400 h-[200px] flex flex-col justify-center m-2 pl-4  w-[250px] md:w-[350px] md:mx-6 hover:h-[215px] hover:w-[265px] sm:hover:h-[215px] sm:hover:w-[285px] md:hover:h-[215px] md:hover:w-[300px] lg:hover:h-[215px] lg:hover:w-[330px]">
+                <span id="Projext-icon" class="material-symbols-outlined mb-3" style="color: #0ef;">
+                    web_asset
+                </span>
+                <h1 class="font-semibold text-lg"><span class="text-cyan-400">UI/UX</span>Design</h1>
+                <p class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque odit inventore
+                    asperiores beatae ipsa
+                    quas!</p>
+                <footer
+                    class="text-xs mt-3 cursor-pointer hover:underline hover:text-sm text-slate-300 hover:text-cyan-400">
+                    explore
+                </footer>
+            </div>
+            <div
+                class="hover:bg-cyan-800 border-2 rounded-xl bg-cyan-950 shadow-xl shadow-cyan-400 h-[200px] flex flex-col justify-center m-2 pl-4 w-[250px] md:w-[350px] md:mx-6 hover:h-[215px] hover:w-[265px] sm:hover:h-[215px] sm:hover:w-[285px] md:hover:h-[215px] md:hover:w-[300px] lg:hover:h-[215px] lg:hover:w-[330px]">
+
+                <span id="Projext-icon" class="material-symbols-outlined mb-3" style="color: #0ef;">
+                    domain_verification
+                </span>
+
+                <h1 class="font-semibold text-lg"><span class="text-cyan-400">APPs</span>Design</h1>
+                <p class="text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque odit inventore
+                    asperiores beatae ipsa
+                    quas!</p>
+                <footer
+                    class="text-xs mt-3 cursor-pointer hover:underline hover:text-sm text-slate-300 hover:text-cyan-400">
+                    explore
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- MY PROJECT END HERE -->
+
+    <!-- MY Work START HERE -->
+
+    <div id="work-box" class="flex justify-center flex-col items-center w-[100%] mt-12 ">
+        <div id="myskill-box">
+            <h1 class="underline text-2xl sm:mr-96 md:mr-[540px] lg:mr-[760px] font-bold text-white"><span
+                    class="text-cyan-400 underline">MY</span>SKILLS</h1>
+        </div>
+        <div
+            class=" text-white w-[400px] sm:w-[600px] md:w-[800px] lg:w-[1000px] flex flex-wrap justify-center items-center sm:flex-nowrap mt-8">
+            <div
+                class=" hover:text-lg border-2 rounded-xl bg-cyan-950 h-[200px] shadow-xl shadow-cyan-400 flex flex-col justify-evenly m-2 pl-4  w-[250px] md:w-[350px] md:mx-6">
+
+                <h1 class="font-semibold text-lg"><span class="text-cyan-400">Web</span>Design</h1>
+                <p class="text-xs font-bold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor
+                    sit, amet consectetur adipisicing elit. Quod, reiciendis? Atque odit inventore
+                    asperiores beatae ipsa
+                    quas!</p>
+                <span id="redirect-icon" class="material-symbols-outlined " style="color: #0ef;">
+                    open_in_new
+                </span>
+
+            </div>
+            <div
+                class="border-2 rounded-xl bg-cyan-950 h-[200px] shadow-xl shadow-cyan-400 flex flex-col justify-evenly m-2 pl-4  w-[250px] md:w-[350px] md:mx-6">
+
+                <h1 class="font-semibold text-lg"><span class="text-cyan-400">UI/UX</span>Design</h1>
+                <p class="text-xs font-bold">Lorem ipsum dolor sit amet consectetur, Lorem, ipsum dolor sit amet
+                    consectetur adipisicing elit. Blanditiis, esse? adipisicing <elit class="lorem10">
+                    </elit> Atque odit inventore
+                    asperiores beatae ipsa
+                    quas!</p>
+                <span id="redirect-icon" class="material-symbols-outlined " style="color: #0ef;">
+                    open_in_new
+                </span>
+
+            </div>
+            <div
+                class="border-2 rounded-xl bg-cyan-950 h-[200px] shadow-xl shadow-cyan-400 flex flex-col justify-evenly m-2 pl-4 w-[250px] md:w-[350px] md:mx-6">
+
+                <h1 class="font-semibold text-lg"><span class="text-cyan-400">APP</span>Design</h1>
+                <p class="text-xs font-bold">Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Deleniti, ducimus!adipisicing elit. Atque odit
+                    inventore
+                    asperiores beatae ipsa
+                    quas!</p>
+                <span id="redirect-icon" class="material-symbols-outlined " style="color: #0ef;">
+                    open_in_new
+                </span>
+
+            </div>
+        </div>
+    </div>
+    <!-- MY WORK END HERE  -->
+
+    
+
+
+    <!-- CONTACT ME DETAILS HERE  -->
+    <div id="contact-boxx" class="mt-10 mb-2 text-3xl flex justify-center sm:pr-[55%] md:pr-[58%]  lg:pr-[55%]">
+        <h1 class="text-slate-200 font-bold underline">Contact<span class="text-cyan-400 underline">Me</span></h1>
+    </div>
+    <div class="h-[640px] sm:h-[480px] text-white flex flex-wrap-reverse flex-row justify-evenly items-center">
+        <div class="flex flex-col mt-12">
+            <div class="">
+                <h1 class="text-2xl font-bold shadow-md shadow-cyan-400 p-1">SOCIAL<span
+                        class="text-cyan-400">MEDIA:</span></h1>
+            </div>
+            <div>
+                <div class="flex flex-row items-center pr-2 mt-5 ">
+                    <i class="fa-brands fa-linkedin-in" style="color: #0ef;"></i>
+                    <h1 class=" text-sm ml-2 transition-all duration-300 ease-in-out transform-gpu hover:translate-x-2">
+                        <a href="https://www.linkedin.com/in/sujeet-kumar-14661019a/">Linkdin</a>
+                    </h1>
+                </div>
+
+                <div class="flex flex-row items-center pr-2 mt-2 ">
+                    <i class="fa-brands fa-facebook" style="color: #0ef;"></i>
+                    <h1 class=" text-sm ml-2 transition-all duration-300 ease-in-out transform-gpu hover:translate-x-2">
+                        <a href="https://www.facebook.com/rudra.sk.79">Facebook</a>
+                    </h1>
+                </div>
+
+                <div class="flex flex-row items-center pr-2 mt-2 ">
+                    <i class="fa-brands fa-instagram" style="color: #0ef;"></i>
+                    <h1 class=" text-sm ml-2 transition-all duration-300 ease-in-out transform-gpu hover:translate-x-2">
+                        <a href="https://www.instagram.com/mr_sujeet_3.0/">Instagram</a>
+                    </h1>
+                </div>
+                <div class="flex flex-row items-center pr-2 mt-2 ">
+                    <i class="fa-brands fa-youtube" style="color: #0ef;"></i>
+                    <h1 class=" text-sm ml-2 transition-all duration-300 ease-in-out transform-gpu hover:translate-x-2">
+                        <a href="https://www.youtube.com/channel/UCxgBqrP5wFTrszLKFSTg_Zg">Youtube</a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div
+            class="text-white font-semibold bg-cyan-950 shadow-cyan-400 shadow-md h-[27rem] w-[350px] md:w-[400px] rounded-xl flex flex-col justify-center items-center mt-4">
+            <div>
+                <h1 class="text-slate-200 text-2xl font-bold ">Fill this Form:</h1>
+            </div>
+            <form class="">
+
+                <div class="mt-6 relative">
+                    <label class="text-slate-200" for="name">Name</label>
+                    <input id="contact-name" onkeyup="validName()"
+                        class="m-2 text-white border-b-2 border-cyan-400 outline-none bg-transparent pl-2 text-sm rounded-sm w-[230px] md:w-[280px]"
+                        type="text" placeholder="Enter your full name">
+                    <span id="name-error" class="absolute top-0 right-[10px] text-[10px] mt-[11px]"></span>
+                </div>
+
+                <div class="mt-6 relative">
+                    <label class="text-slate-200" for="name">Phone</label>
+                    <input id="contact-phone" onkeyup="validPhone()"
+                        class=" m-2 text-white border-b-2 border-cyan-400 outline-none bg-transparent pl-2 text-sm rounded-sm w-[230px] md:w-[280px] "
+                        type="tel" placeholder="123 456 7890">
+                    <span id="phone-error" class="absolute top-0 right-[10px]  text-[10px] mt-[11px] "></span>
+                </div>
+
+                <div class="mt-6 relative">
+                    <label class="text-slate-200" for="name">Email</label>
+                    <input id="contact-email" onkeyup="validEmail()"
+                        class="m-2 ml-3 text-white border-b-2 border-cyan-400 outline-none  bg-transparent pl-2 text-sm rounded-sm w-[230px] md:w-[280px]"
+                        type="text" placeholder="eg. abc123@gmail.com">
+                    <span id="email-error" class="absolute top-0 right-[10px] text-[10px] mt-[11px] "></span>
+                </div>
+
+                <div class="mt-6 relative">
+                    <label class="text-slate-200" for="name">Message</label>
+                    <textarea id="contact-message" onkeyup="validText()"
+                        class="bg-cyan-950 border-2 border-cyan-400 pl-2 text-sm w-[220px] md:w-[270px] lg:w-[260px] rounded-lg outline-none"
+                        name="text" id="message" cols="10" rows="5" placeholder="Leave a message"></textarea>
+
+                    <span id="message-error" class="absolute bottom-3 right-[15px] lg:right-[22px] text-[10px] mt-[11px] "></span>
+                </div>
+
+            </form>
+            <span id="submitt-error" class=" text-white text-[8px]"></span>
+            <button id="submit-btn"
+            class="bg-cyan-400 shadow-md shadow-cyan-400 w-[7rem] rounded-2xl text-black font-bold mt-5">Submit</button>
+        </div>
+    </div>
+   
+
+    <!-- CONTACT DETAILS END HERE -->
+
+    <!-- LAST FOOTER START HERE -->
+
+    <div
+        class=" text-[9px] h-[200px] sm:text-[11px] md:text-[13px] lg:text-[14px] leading-relaxed sm:h-[210px] md:h-[240px] lg:h-[260px] bg-slate-600 text-white flex justify-evenly items-center mt-4 p-2">
+
+        <div>
+            <ul class=" flex flex-col  ">
+                <h1 class="text-[11px] sm:text-[13px] md:text-[15px] lg:text-[17px] mb-1 font-semibold">Get to Know Us</h1>
+                <li>Portfolioxyz.com</li>
+                <li>Bahrampur Ghaziabad</li>
+                <li>8287119574</li>
+                <li>sujeetsk21@google.com</li>
+                <li>Contact form</li>
+
+            </ul>
+        </div>
+        <div>
+            <ul class=" flex flex-col  ">
+                <h1 class="text-[11px] mb-1 sm:text-[13px] md:text-[15px] lg:text-[17px] font-semibold">Contact Information</h1>
+                <li>Portfolioxyz.com</li>
+                <li>Bahrampur Ghaziabad</li>
+                <li>8287119574</li>
+                <li>sujeetsk21@google.com</li>
+                <li>Contact form</li>
+
+            </ul>
+        </div>
+        <div>
+            <ul class=" flex flex-col ">
+                <h1 class="text-[11px] mb-1 sm:text-[13px] md:text-[15px] lg:text-[17px] font-semibold">Home</h1>
+                <li>About us</li>
+                <li>Services</li>
+                <li>Contact</li>
+                <li>Projects</li>
+                <li>Education</li>
+
+            </ul>
+        </div>
+
+        <div>
+            <ul class=" flex flex-col  ">
+                <h1 class="text-[11px] mb-1 sm:text-[13px] md:text-[15px] lg:text-[17px] font-semibold">Privacy Policy</h1>
+                <li>Terms of Services</li>
+                <li>Copyright</li>
+                <li>Terms of Services</li>
+                <li>Copyright</li>
+                <li>XYZ Orgnization</li>
+
+            </ul>
+        </div>
+        <div>
+            <ul class=" flex flex-col">
+                <h1 class="text-[11px] mb-2 sm:text-[13px] md:text-[15px] lg:text-[17px] font-semibold">Ask Us</h1>
+                <li>FQAs</li>
+                <li>Certification</li>
+                <li>Hours of opertaion</li>
+                <li>Poliy</li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <div
+        class="text-slate-300 flex flex-col justify-center items-center text-[7px] sm:text-[8px] md:text-[9px] lg:text-[10px] bg-gray-900">
+        <h1>Copyright Notice: @2001-2023 XYZ Orgnization</h1>
+        <h5>cookie policies</h5>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        const showbtn = document.getElementById('show-btn');
+        const closebtn = document.getElementById('close-btn');
+        const hiddenBAr = document.getElementById('hidden-bar');
+        const hiddenBarHome = document.getElementById('hidden-bar-Home');
+
+        showbtn.addEventListener('click', () => {
+            hiddenBAr.style.display = "flex";
+            hiddenBarHome.style.display = "none";
+
+        })
+
+        closebtn.addEventListener('click', () => {
+            hiddenBAr.style.display = "none";
+            hiddenBarHome.style.display = "flex";
+
+        })
+// side hidden nav bar end here
+
+        const SkillsBox = document.getElementById('Skills-box')
+        const ExprienceBox = document.getElementById('Exprience-box')
+        const EducationBox = document.getElementById('Education-box')
+
+        function Skills() {
+            SkillsBox.style.display = "flex";
+            ExprienceBox.style.display = "none";
+            EducationBox.style.display = "none";
+
+        }
+        function Exprience() {
+            SkillsBox.style.display = "none";
+            ExprienceBox.style.display = "flex";
+            EducationBox.style.display = "none";
+
+        }
+        function Education() {
+            SkillsBox.style.display = "none";
+            ExprienceBox.style.display = "none";
+            EducationBox.style.display = "flex";
+
+        }
+
+// about me end here
+
+//form fill start here++++++++++++++++++++++++++++++++++++++++++++++++
+
+const nameError =document.getElementById('name-error');
+const phoneError =document.getElementById('phone-error');
+const emailError =document.getElementById('email-error');
+const messageError =document.getElementById('message-error');
+const submitBtn = document.getElementById('submit-btn');
+
+
+   function validName(){
+    const contactName = document.getElementById('contact-name').value;
+
+    if(contactName.length == 0){
+           nameError.innerHTML="Name is required";
+           return false;
+    }
+    if(!contactName.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+        nameError.innerHTML="Write a full name";
+           return false;
+    }
+    nameError.innerHTML="valid"
+    return true;
+   }
+   
+   //+++++++++++++++
+
+   function validPhone(){
+    const contactPhone = document.getElementById('contact-phone').value;
+
+    if(contactPhone.length == 0){
+         phoneError.innerHTML ="Number is required";
+         return false;
+    }
+    if(contactPhone.length !==10){
+         phoneError.innerHTML ="Enter the valid no:";
+         return false;
+    }
+    if(!contactPhone.match(/^[0-9]{10}$/)){
+        phoneError.innerHTML ="WTF are u doing only Digits plz";
+         return false;
+    }
+    phoneError.innerHTML="valid";
+    return true;
+   }
+   //+++++++++++++++++++++++++
+
+    function validEmail(){
+        const contactEmail = document.getElementById('contact-email').value;
+        
+        if(contactEmail.length == 0){
+            emailError.innerHTML = "Email is required"
+            return false;
+        }
+        if(!contactEmail.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)){
+            emailError.innerHTML = "Enter the valid email"
+            return false;
+        }
+        emailError.innerHTML = "vaild";
+        return true;
+    }
+
+    function validText(){
+       
+        const contactMessage = document.getElementById('contact-message').value;
+        const requiredText = 30;
+        const LeftText = requiredText - contactMessage.length;
+
+        if(LeftText > 0){
+           messageError.innerHTML = LeftText + " more character requird";
+           return false
+        }
+        messageError.innerHTML = "valid"
+        return true;
+    }
+
+
+     const submitError= document.getElementById('submitt-error');
+     submitBtn.addEventListener('click',()=>{
+      
+        if(!validEmail() || !validName() || !validPhone() || !validText()){
+            submitError.style.display = "block";
+           submitError.innerHTML = "Plz Recheck Your Form";
+           setTimeout(()=>{
+                       submitError.style.display = "none";
+            },3000)
+
+            return false;
+        }
+        else{
+            submitError.style.display = "block";
+             submitError.innerHTML = "Successfully Submited " 
+             setTimeout(()=>{
+                       submitError.style.display = "none";
+                      alert("Thank You");
+            },3000)
+           return true;
+        }
+       
+     })
+
+
+
+
+
+        var typed = new Typed('#element', {
+            strings: ["<i>SujeeT Kumar", "Fronted Developer", "with MERN full Stack<i>"],
+            typeSpeed: 50,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+
+        });
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
